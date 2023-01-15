@@ -1,0 +1,61 @@
+.header {
+    .container {
+    }
+}
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    .header__logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Potta One';
+        font-size: 38px;
+        letter-spacing: $ls05;
+        color: #565759;
+        text-transform: capitalize;
+    }
+    .header__navigation {
+        display: flex;
+        align-items: center;
+    }
+    .header__buttons {
+        display: flex;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-right: 38px;
+        }
+    }
+}
+.navigation {
+    .navigation__list {
+        display: flex;
+        font-family: $opensans;
+        letter-spacing: $ls05;
+        color: #697390;
+
+        & > *:not(:last-child) {
+            margin-right: 33px;
+        }
+    }
+}
+.navigation__link {
+    .link {
+    }
+    .link__item {
+        font-family: $opensans;
+        letter-spacing: normal;
+        text-transform: capitalize;
+        color: #697390;
+    }
+}
+.header__button {
+    width: 22px;
+    height: 22px;
+    .icon {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

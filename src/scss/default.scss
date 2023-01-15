@@ -1,3 +1,12 @@
+$opensans: 'Open Sans';
+$potta: 'Potta One';
+$inter: 'Inter';
+$ls05: -0.5px;
+
+html {
+    overflow-y: scroll;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -5,7 +14,7 @@
 }
 
 .container {
-    // max-width: value;
+    max-width: 1110px;
     padding: 0 15px;
     margin: 0 auto;
     box-sizing: content-box;
