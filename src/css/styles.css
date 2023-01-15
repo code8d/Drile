@@ -64,7 +64,7 @@ html {
 }
 
 .title {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   letter-spacing: 0.5px;
   text-transform: capitalize;
@@ -168,6 +168,9 @@ html {
 .main {
   min-height: 100vh;
 }
+.main .hero {
+  position: relative;
+}
 .main .container {
   min-height: 100vh;
 }
@@ -176,6 +179,22 @@ html {
   position: relative;
   padding: 35px 0 0 0;
 }
+.hero-block .container-wrapper {
+  position: relative;
+}
+.hero-block .container {
+  min-height: auto;
+}
+.hero-block .hero__substrate {
+  position: absolute;
+  top: 59.55%;
+  right: 0;
+  z-index: -1;
+  width: 62.15%;
+  height: 497px;
+  background: #F6F6F6;
+}
+
 .carouserl {
   position: relative;
   z-index: 2;
@@ -258,7 +277,6 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 113.15%;
   margin-left: -77px;
 }
 .carouserl__buttons .next {
@@ -281,4 +299,158 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Best Seller */
+.best-seller-block {
+  padding: 85px 0 0 0;
+}
+.best-seller-block .best-seller__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.best-seller__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.best-seller__items > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+.best-seller__items .item__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+.best-seller__items .item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #fff;
+  min-height: 342px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.best-seller__items .item .item__image-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 35px;
+}
+.best-seller__items .item .item__image-block .image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item__description > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+.item__description .item__name {
+  font-family: "Open Sans";
+  letter-spacing: -0.5px;
+  color: #2A2A2B;
+  text-align: center;
+  text-transform: capitalize;
+}
+.item__description .item__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item__description .item__price .value-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item__description .item__price .value-separator {
+  margin: 0 6px;
+  color: #8C8C8C;
+}
+.item__description .item__price .currency, .item__description .item__price .value {
+  font-size: 14px;
+  color: #8C8C8C;
+  letter-spacing: 0.9px;
+}
+
+.item__stocks {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+.item__stocks .stock > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.item__stocks .stock .stock__name, .item__stocks .stock .stock__percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75px;
+  height: 28px;
+  background: #F29731;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+.item__stocks .stock .stock__percent {
+  background: #9E0B0F;
+}
+
+.item__buttons {
+  position: absolute;
+  top: 165px;
+  right: 5px;
+}
+.item__buttons > *:not(:last-child) {
+  margin-bottom: 5px;
+}
+.item__buttons .item__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.item__buttons .item__button .icon {
+  width: 15px;
+  max-height: 15px;
 }
