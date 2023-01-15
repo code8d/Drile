@@ -4,7 +4,6 @@
         position: relative;
     }
     .container {
-        min-height: 100vh;
     }
 }
 
@@ -46,15 +45,15 @@
     .item {
     }
     .item__image-block {
-    }
-}
-.image-block {
-    display: flex;
-    max-width: 625px;
-    max-height: 450px;
-    .item__image {
-        width: 100%;
-        height: 100%;
+        .image-block {
+            display: flex;
+            max-width: 625px;
+            max-height: 450px;
+            .item__image {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 .item__description-block {
@@ -71,15 +70,6 @@
         font-size: calc(2.22em + 1vw);
     }
     .item__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 122px;
-        height: 38px;
-        background: #434343;
-        text-transform: uppercase;
-        font-family: $opensans;
-        letter-spacing: $ls05;
     }
 }
 .carouserl__buttons {
@@ -167,6 +157,7 @@
     }
 
     .item__name {
+        display: flex;
         font-family: $opensans;
         letter-spacing: $ls05;
         color: #2A2A2B;
@@ -242,6 +233,203 @@
         .icon {
             width: 15px;
             max-height: 15px;
+        }
+    }
+}
+
+.deal-of-the-weak {
+    position: relative;
+    margin-top: 120px;
+    .container {
+    }
+    .deal-substrate {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 60vw;
+        height: 594px;
+        background: #F7F7F7;
+    }
+}
+.deal-block {
+    // padding: 185px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    & > *:not(:last-child) {
+        margin-right: 100px;
+    }
+
+    .image-substrate {
+        flex: 0 0 53.51%;
+        display: flex;
+        max-width: 594px;
+        max-height: 594px;
+        background: #F7F7F7;        
+        padding: 35px;
+        border-radius: 377px 0 0 377px;
+    }
+    .image-block__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100%;
+        min-height: 100%;
+        border-radius: 500px;
+        background: #fff;
+        box-shadow: 0 0 34px 4px rgba(86, 86, 86, 0.1);
+        .image-block {
+            display: flex;
+            max-width: 356px;
+            max-height: 227px;
+            .image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .deal-description {
+        flex: 1 0;
+        display: flex;
+        flex-direction: column;
+        .deal__above-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 204px;
+            height: 38px;
+            font-family: $opensans;
+            letter-spacing: $ls05;
+            text-transform: uppercase;
+            background: #8096BC;
+            margin-bottom: 40px;
+        }
+        .deal__description-text {
+            font-family: $opensans;
+            font-weight: 300;
+            line-height: 26px;
+            color: #727272;
+            margin-bottom: 28px;
+        }
+        .deal__button {
+            margin-bottom: 26px;
+        }
+        .shop-now {
+        }
+    }
+    .deal__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+        .deal__price-text {
+            font-size: 45px;
+            line-height: 50px;
+            letter-spacing: $ls09;
+            margin-right: 12px;
+            color: #3A3A3A;
+        }
+    }
+    .deal__price-value {
+        display: flex;
+        align-items: center;
+            .price__currency {
+            }
+            .price__value {
+            }
+            .price__currency, .price__value {
+                font-size: 45px;
+                line-height: 50px;
+                letter-spacing: $ls09;
+                color: #78A2CA;
+            }
+        }
+    .price {
+    }
+    .deal__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -13px;
+        .item-wrapper {
+            flex: 0 0 25%;
+            display: flex;
+            width: 87px;
+            height: 87px;
+            padding: 0 13px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, .1);
+            .image-block {
+                display: flex;
+                max-width: 65px;
+                max-height: 65px;
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1152px) {
+    .deal-of-the-weak {
+        position: relative;
+        margin-top: 120px;
+        .container {
+        }
+        .deal-substrate {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            width: 60vw;
+            height: 400px;
+            background: #F7F7F7;
+        }
+    }
+    .deal-block {
+        & > *:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    .image-substrate {
+        flex: 0 0 100%;
+        display: flex;
+        max-width: 400px;
+        max-height: 400px;
+        background: #F7F7F7;        
+        padding: 35px;
+        border-radius: 377px 0 0 377px;
+    }
+    .image-block__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: auto;
+        min-height: auto;
+        border-radius: 500px;
+        background: #fff;
+        box-shadow: 0 0 34px 4px rgba(86, 86, 86, 0.1);
+        .image-block {
+            display: flex;
+            max-width: 356px;
+            max-height: 227px;
+            .image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }

@@ -38,3 +38,15 @@ html {
     text-transform: capitalize;
     color: #3A3A3A;
 }
+
+.shop-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 38px;
+    background: #434343;
+    text-transform: uppercase;
+    font-family: $opensans;
+    letter-spacing: $ls05;
+}
