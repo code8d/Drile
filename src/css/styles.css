@@ -49,16 +49,7 @@ html {
           box-sizing: content-box;
 }
 
-.header-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-height: 100px;
-}
-.header-block .header__logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +62,33 @@ html {
   color: #565759;
   text-transform: capitalize;
 }
+
+.title {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  color: #3A3A3A;
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100px;
+}
 .header-block .header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-block .header__hamburger-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +127,33 @@ html {
   color: #697390;
 }
 
+.hamburger {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hamburger > *:not(:last-child) {
+  margin-bottom: 4px;
+}
+.hamburger .hamburger__line {
+  width: 35px;
+  height: 4px;
+  background: #697390;
+}
+.hamburger .hamburger__line:nth-child(1) {
+  width: 25px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .header__button {
   width: 22px;
   height: 22px;
@@ -126,4 +170,115 @@ html {
 }
 .main .container {
   min-height: 100vh;
+}
+
+.hero-block {
+  position: relative;
+  padding: 35px 0 0 0;
+}
+.carouserl {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+.carouserl .carousel__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.carouserl .carousel__item > *:not(:last-child) {
+  margin-right: 100px;
+}
+.image-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 625px;
+  max-height: 450px;
+}
+.image-block .item__image {
+  width: 100%;
+  height: 100%;
+}
+
+.item__description-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 34.7%;
+          flex: 0 0 34.7%;
+  -webkit-transform: translateY(-27px);
+          transform: translateY(-27px);
+}
+.item__description-block > *:not(:last-child) {
+  margin-bottom: 25px;
+}
+.item__description-block .item__description {
+  text-transform: none;
+  letter-spacing: 0.9px;
+}
+.item__description-block .title {
+  font-size: calc(2.22em + 1vw);
+}
+.item__description-block .item__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 122px;
+  height: 38px;
+  background: #434343;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  letter-spacing: -0.5px;
+}
+
+.carouserl__buttons {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 113.15%;
+  margin-left: -77px;
+}
+.carouserl__buttons .next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.carousel__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 27px;
+  height: 53px;
+}
+.carousel__button .icon {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
