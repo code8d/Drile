@@ -1,6 +1,7 @@
 $opensans: 'Open Sans';
 $potta: 'Potta One';
 $inter: 'Inter';
+$ls02: 0.2px;
 $ls05: -0.5px;
 $ls09: 0.9px;
 
@@ -45,6 +46,7 @@ html {
     justify-content: center;
     width: 122px;
     height: 38px;
+    color: #fff;
     background: #434343;
     text-transform: uppercase;
     font-family: $opensans;
