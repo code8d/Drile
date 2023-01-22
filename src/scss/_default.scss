@@ -1,0 +1,16 @@
+$opensans: 'Open Sans';
+$potta: 'Potta One';
+$inter: 'Inter';
+$ls02: 0.2px;
+$ls05: -0.5px;
+$ls09: 0.9px;
+
+html {
+    overflow-y: scroll;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
